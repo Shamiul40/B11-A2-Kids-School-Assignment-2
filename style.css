@@ -65,10 +65,120 @@
 }
 /* toggle-button */
 .toggle-btn{
-    display: none;
+    display:none;
     font-size: 1.2rem;
     cursor: pointer;
     color: #111111;
+}
+
+/* main section related style */
+/* empowering student section */
+ .empowering-students{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1160px;
+    margin:8px auto;
+    gap: 50px;
+    
+}
+
+.empowering-student-content h1{
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #111111;
+}
+.empowering{
+    color: #FEA301;
+}
+.towards{
+    color: #01ACFD;
+}
+.empowering-student-content p{
+    color: #111111;
+    font-size: 1.2rem;
+    margin: 24px 0;
+}
+.enroll-now-btn {
+    padding: 10px 47px;
+    color: #ffffff;
+    background-color: #111111;
+    border-style: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* standard curriculam section related style */
+.standard-curriculam-section{
+    background: url(assets/bg.png);
+    max-width: 1440px;
+    height: 800px;
+    margin: 0 auto;   
+}
+.standard-curriculam-section h1{
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 60px 0 80px 0;
+}
+.standard-curiculam{
+    display: flex;
+    margin: 0 auto;
+    gap: 28px;
+    max-width: 1160px;
+}
+
+.standard-card{
+    max-width: 367px;
+    max-height: 476px;
+    padding: 52px 40px;
+    border-radius: 18px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+   
+
+}
+.standard-card img{
+  
+    padding-bottom: 20px;
+}
+.standard-card h2 {
+    color: #202020;
+    padding-bottom: 20px ;
+}
+.standard-card p{
+    color: #808080;
+    padding-bottom: 20px;
+}
+ /* card gradient color  */
+.gradient-1{
+    background: linear-gradient(180deg, rgba(222, 245, 255, 1),10%, rgba(255, 255, 255, 0));
+}
+.gradient-2{
+    background: linear-gradient(180deg, rgba(255, 244, 220, 1),10%, rgba(255, 255, 255, 1));
+}
+.gradient-3{
+    background: linear-gradient(180deg, rgba(238, 225, 255, 1),10%, rgba(255, 255, 255, 1));   
+}
+/* card button style */
+.card-a-1{
+    text-decoration: none;
+    color: #64C8FF;
+}
+.card-a-2{
+    text-decoration: none;
+    color: #F0AA00;
+}
+.card-a-3{
+    text-decoration: none;
+    color: #8700FF;
+}
+.side-arrow{
+    font-size: 3rem;
+    text-align: center;
+    margin: 80px 0;
+    color: #FEA301;
 }
 
 
@@ -81,12 +191,8 @@
 
 
 
-
-
-
-
-
-@media screen and (max-width: 992px) {
+/* header responsive */
+@media screen and (max-width: 576px) {
     .navbar .links,
     .navbar .logo-school,
     .navbar .primary-btn{
@@ -96,9 +202,68 @@
         display: block;
         font-size: 2rem;
     }
+    .navbar{   
+        margin: 0 20px;    
+    }
     .header {
-        padding:0px 16px;
         height: 70px;
         border-bottom: 0.5px solid #FEA301;   
+    }
+    
+}
+
+
+/* main responsive */
+/* empowering-student section responsive */
+@media screen  and (max-width: 576px) {
+     .empowering-students{
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    .empowering-student-content{
+        max-width: 468px;
+        
+        text-align: center;
+    }
+    .empowering-student-content h1{
+        font-size: 2.5rem;
+    }
+    .empowering-student-content p{
+        font-size: 1rem;
+        margin: 18px 0;
+    }
+     
+}
+
+/* standard curriculam section */
+@media screen and (max-width: 576px){
+    .standard-curiculam{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } 
+    .standard-card{
+        max-width: 450px;
+        height: 400px;
+    }  
+    .standard-curriculam-section h1{
+        font-size: 2rem;
+        padding: 40px 0 20px 0;
+    } 
+    .side-arrow{
+        visibility: hidden;
+    }
+    .standard-card-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;;
+        text-align: center;
+    }
+    .standard-card-content h2{
+        font-size: 1.3rem;
+    }
+    .standard-card-content p{
+        font-size: .7rem;
     }
 }
