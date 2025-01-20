@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", serif;
+}
+/* Header section related style */
+
+/* navbar */
+.navbar{
+    max-width: 1160px;
+    height: 62px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-school{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #111111;
+    margin: 0 11px;
+    cursor: pointer;
+}
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.links li{
+    list-style: none;
+    margin-left: 32px;
+}
+.links li a{
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.Home{
+    color: #FEA301;
+}
+.about{
+    color: #01ACFD;
+}
+.facilities {
+    color: #05D4DF;
+}
+.admission{
+    color: #5D58EF;
+}
+/* primary button style */
+.primary-btn{
+    padding: 10px 60px;
+    color: #ffffff;
+    background-color: #FEA301;
+    border-style: none;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+/* toggle-button */
+.toggle-btn{
+    display: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #111111;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 992px) {
+    .navbar .links,
+    .navbar .logo-school,
+    .navbar .primary-btn{
+        display: none;
+    }
+    .navbar .toggle-btn{
+        display: block;
+        font-size: 2rem;
+    }
+    .header {
+        padding:0px 16px;
+        height: 70px;
+        border-bottom: 0.5px solid #FEA301;   
+    }
+}
