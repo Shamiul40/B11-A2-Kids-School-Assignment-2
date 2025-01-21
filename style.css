@@ -4,6 +4,14 @@
     box-sizing: border-box;
     font-family: "Quicksand", serif;
 }
+/* marque tag style */
+.marque-tag{
+    font-size: 1.5rem;
+    padding: 8px 0;
+    background-color: #01ACFD;
+    color: #ffffff;
+    font-weight: 600;
+}
 /* Header section related style */
 
 /* navbar */
@@ -111,9 +119,6 @@
 }
 
 /* standard curriculam section related style */
-.standard-curriculam-section-all{
-
-}
 .standard-curriculam-section{
     background: url(assets/bg.png);
     max-width: 1440px;
@@ -393,6 +398,9 @@
     .empowering-student-content p{
         font-size: 1rem;
         margin: 18px 0;
+    }
+    .empowering-student-img img{
+        width: 100%;
     }
      
 }
