@@ -488,7 +488,21 @@
         margin: 40px auto;
     }
 } 
-
+/*for small device */
+@media screen and (min-width:250px) and (max-width:420px) {
+    .card-btn2, .card-btn3, .card-btn4, .card-btn5{
+        position: absolute;
+        padding: 12px 20px;
+        border-radius: 20px;
+        border-style: none;
+        font-size: .7rem;
+        font-weight: 400;
+        color: white;
+        top: 100px;
+        left: 21px;
+        z-index: 999; 
+    }
+}
 
 /* footer responsive */
 @media screen and (max-width:576px) {
