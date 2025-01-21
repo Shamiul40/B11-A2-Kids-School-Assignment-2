@@ -111,6 +111,9 @@
 }
 
 /* standard curriculam section related style */
+.standard-curriculam-section-all{
+
+}
 .standard-curriculam-section{
     background: url(assets/bg.png);
     max-width: 1440px;
@@ -175,9 +178,9 @@
     color: #8700FF;
 }
 .side-arrow{
-    font-size: 3rem;
+    font-size: 3.5rem;
     text-align: center;
-    margin: 80px 0;
+    margin: 90px 0;
     color: #FEA301;
 }
 
@@ -185,14 +188,14 @@
 .our-stories-section{
     background-image:linear-gradient(to top,rgba(255, 223, 167, 1),rgba(255, 255, 255, 1)), url(assets/bg.png);
     max-width: 1440px;
-    height: 1100px;
+    height: 1050px;
     margin: 0 auto;
     
 }
 .our-stories-section h1{
     font-size: 2.8rem;
     text-align: center;
-    padding: 80px 30px;
+    padding: 70px 30px;
     font-weight: 700;
 }
 .our-stories-cards{
@@ -343,6 +346,10 @@
 
 /* standard curriculam section */
 @media screen and (max-width: 576px){
+    .standard-curriculam-section{
+        background: none;
+         
+    }
     .standard-curiculam{
         flex-direction: column;
         justify-content: center;
@@ -373,3 +380,47 @@
         font-size: .7rem;
     }
 }
+
+/* Our stories section responsive */
+ @media screen and (max-width:576px) {
+    .our-stories-section{
+        max-width: 550px;
+        height: 900px;
+        margin: 550px auto;
+        
+     
+    }
+    .card-grid{
+        
+      display: none;
+
+    }
+    .our-stories-cards{
+        max-width: 500px;
+        gap: 5px;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto;
+    }
+
+    .stories-card h3{
+        margin: 10px 0;
+        font-size: .9rem;
+        padding: 20px 20px;
+    }
+    .stories-card img{
+        width: 100%;
+    }
+    .card-btn2, .card-btn3, .card-btn4, .card-btn5{
+        position: absolute;
+        padding: 12px 20px;
+        border-radius: 20px;
+        border-style: none;
+        font-size: .7rem;
+        font-weight: 400;
+        color: white;
+        top: 130px;
+        left: 21px;
+        z-index: 999; 
+    }
+    
+} 
