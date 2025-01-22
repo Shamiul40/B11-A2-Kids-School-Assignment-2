@@ -87,6 +87,7 @@
 }
 
 /* main section related style */
+
 /* empowering student section */
  .empowering-students{
     display: flex;
@@ -127,6 +128,7 @@
 .enroll-now-btn:hover{
     background-color: #01ACFD;
 }
+
 
 /* standard curriculam section related style */
 .standard-curriculam-section{
@@ -169,6 +171,7 @@
     padding-bottom: 20px;
 }
 
+
  /* card gradient color  */
 .gradient-1{
     background: linear-gradient(180deg, rgba(222, 245, 255, 1),10%, rgba(255, 255, 255, 0));
@@ -179,6 +182,7 @@
 .gradient-3{
     background: linear-gradient(180deg, rgba(238, 225, 255, 1),10%, rgba(255, 255, 255, 1));   
 }
+
 
 /* card button style */
 .card-a-1{
@@ -208,6 +212,7 @@
 .arrow2:hover{
     color: #01ACFD;
 }
+
 /* our stories section related style */
 .our-stories-section{
     background-image:linear-gradient(to top,rgba(255, 223, 167, 1),rgba(255, 255, 255, 1)), url(assets/bg.png);
@@ -320,6 +325,8 @@
 .view-all-btn:hover{
 background-color: #01ACFD;
 }
+
+
 /* footer section related style */
 .footer{
     background-color:#01ACFD;
@@ -378,8 +385,7 @@ background-color: #01ACFD;
 
 
 
-
-
+/* Responsive style area start here */
 
 /* header responsive */
 @media screen and (max-width: 576px) {
@@ -403,7 +409,8 @@ background-color: #01ACFD;
 }
 
 
-/* main responsive */
+/* main section responsive */
+
 /* empowering-student section responsive */
 @media screen  and (max-width: 576px) {
      .empowering-students{
@@ -508,7 +515,8 @@ background-color: #01ACFD;
     .view-all-btn{
         margin: 40px auto;
     }
-} 
+}
+ 
 /*for small device */
 @media screen and (min-width:250px) and (max-width:420px) {
     .card-btn2, .card-btn3, .card-btn4, .card-btn5{
